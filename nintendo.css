@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap");
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  body{
+    background-image: linear-gradient(200deg, rgb(0, 0, 0), hsla(187, 100%, 69%, 0) 70%), linear-gradient(130deg, rgb(25, 202, 214), hsla(0, 92%, 40%, 0.747) 70%), linear-gradient(330deg, rgb(255, 0, 0), hsla(189, 82%, 50%, 0.432) 70%);
+    height: 100vh;
+    width: 100vw;
+    color: white;
+  }
+  .container {
+    width: 1350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .container .btn {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .btn a {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    font-weight: 400px;
+    z-index: 1;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+  }
+  .container .btn:hover a {
+    letter-spacing: 3px;
+  }
+  .container .btn a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+    transform: skewX(45deg) translate(0);
+    transition: 0.5s;
+    filter: blur(0px);
+  }
+  .container .btn:hover a::before {
+    transform: skewX(45deg) translate(200px);
+  }
+  .container .btn::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+  }
+  .container .btn:hover::before /*lightup button*/ {
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+  }
+  
+  .container .btn::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    top: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+  }
+  .container .btn:hover::after /*lightup button*/ {
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+  }
+  .container .btn:nth-child(1)::before, /*chnage 1*/
+  .container .btn:nth-child(1)::after {
+    background: #fae2eb;
+    box-shadow: 0 0 5px #ffdeea, 0 0 15px #fddeea, 0 0 30px #ffdae8,
+      0 0 60px #ffdae7;
+  }
+  .container .btn:nth-child(2)::before, /* 2*/
+  .container .btn:nth-child(2)::after {
+    background: #3d16ec;
+    box-shadow: 0 0 5px #3715fa, 0 0 15px #2a13f7, 0 0 30px #380dfa,
+      0 0 60px #2111fc;
+  }
+  .container .btn:nth-child(3)::before, /* 3*/
+  .container .btn:nth-child(3)::after {
+    background: #1eff3c;
+    box-shadow: 0 0 5px #04af04, 0 0 15px #38ff1e, 0 0 30px #05ad0e,
+      0 0 60px #44ff1e;
+  }
+  .container .btn:nth-child(4)::before, /* 4*/
+  .container .btn:nth-child(4)::after {
+    background: #8c019e;
+    box-shadow: 0 0 5px #7f02a5, 0 0 15px #4e0296, 0 0 30px #58029e,
+      0 0 60px #5c04ad;
+  }
+  .info img{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+  }
+  .info p{
+    text-align: justify;
+    color: #ff0000;
+    font-size:medium;
+  background: rgba(25, 250, 231, 0.801);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.705); 
+  }
+  .info h3{
+    color: #ff0000;
+    font-size: x-large;
+    background: rgb(21, 255, 243);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.596);
+  }

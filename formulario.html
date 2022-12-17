@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Formulario | Registro </title>
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+	</head>
+	<body>
+		<br>
+		<div class="container">
+			<div class="btn"><a href="Index.html" target="_blank">Ir a principal</a></div>
+		</div>
+	<br><br>
+
+	<form action="registro.php" method="POST">
+      <div id="formulario"> 
+        <h1> Formulario para recibir información</h1>
+      </div>
+        <br><br>
+			<div id="tabla-formulario">
+        <label for="nombre">Nombres</label>
+				<input placeholder="Ingrese su nombre..." name="fnombre" type="text"     id="tabla">
+        
+        <label for="apellido">Apellidos</label>
+				<input placeholder="Ingrese su apellido..." name="fapellido" type="text" id="tabla">
+
+        <label for="correo">Correo electronico (*) </label>
+				<input placeholder="Escriba su e-mail" name="femail" type="text" id="tabla">
+
+        <label for="contra">Contraseña</label>
+				<input placeholder="Escriba contraseña" name="fpassword" type="password" id="tabla">
+
+        <label for="fecha">Fecha nacimiento (*) </label>
+				<input placeholder="DD/MM/AA" name="ffechanacimiento" type="text" id="tabla">
+
+        <label for="genero">Género</label>
+				<input placeholder="Escriba genero" name="fgenero" type="text" id="tabla">
+			</div>
+			  <button name="registro" type="submit" id="button"> ¡Registrarse! </button>
+		</form>
+	</body>
+</html>
